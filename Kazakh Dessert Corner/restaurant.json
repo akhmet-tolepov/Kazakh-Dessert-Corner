@@ -1,0 +1,129 @@
+{
+  "name": "Kazakh Food Corner",
+  "description": "Explore the flavors of Kazakhstan with traditional dishes and customizable options for every taste:",
+  "imageName": "kazakh_food_corner_logo",
+  "dishes": [
+    {
+      "name": "Baursak",
+      "summary": "A popular fried bread served as a snack or with meals.",
+      "longDescription": "Baursak is a traditional fried dough that is soft, fluffy, and slightly sweet. It is usually enjoyed with honey or jam, and served during celebrations and family gatherings. You can choose between medium or large portions.",
+      "imageName": "baursak",
+      "price": 200,
+      "customizationOptions": [
+        {
+          "id": "1",
+          "name": "Size",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Medium", "price": 250 },
+            { "option": "Large", "price": 300 }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Sides",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Honey", "price": 50 },
+            { "option": "Jam", "price": 70 }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Sweetness Level",
+          "options": [
+            { "option": "Regular", "price": 0 },
+            { "option": "Less Sweet", "price": 0 },
+            { "option": "Extra Sweet", "price": 30 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Beshbarmak",
+      "summary": "Kazakhstan’s national dish, made with meat, noodles, and onions.",
+      "longDescription": "Beshbarmak, meaning 'five fingers,' is a savory dish of boiled meat, often horse meat, served with large noodles and garnished with onions and fresh herbs. You can also choose lamb or beef. Traditionally eaten with the hands, it's a must-try for experiencing Kazakh hospitality.",
+      "imageName": "beshbarmak",
+      "price": 1500,
+      "customizationOptions": [
+        {
+          "id": "1",
+          "name": "Meat Type",
+          "options": [
+            { "option": "Horse", "price": 1500 },
+            { "option": "None", "price": 0 },
+            { "option": "Lamb", "price": 1300 },
+            { "option": "Beef", "price": 1200 }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Extra Toppings",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Onions", "price": 20 },
+            { "option": "Herbs", "price": 30 }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Flavor Intensity",
+          "options": [
+            { "option": "Regular", "price": 0 },
+            { "option": "Mild", "price": 0 },
+            { "option": "Spicy", "price": 40 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Samsa",
+      "summary": "Flaky pastry filled with meat, onions, and spices.",
+      "longDescription": "Samsa is a savory pastry typically filled with minced meat and onions. Baked to perfection, it’s a popular street food enjoyed by people across Kazakhstan.",
+      "imageName": "samsa",
+      "price": 500
+    },
+    {
+      "name": "Shek-Shek",
+      "summary": "A sweet dessert made with fried dough pieces and honey.",
+      "longDescription": "Shek-Shek is a delightful sweet treat made from small pieces of fried dough coated in honey. Often decorated with nuts and raisins, it’s a popular dessert served at special occasions.",
+      "imageName": "shek",
+      "price": 400,
+      "customizationOptions": [
+        {
+          "id": "1",
+          "name": "Extra Drizzle",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Honey", "price": 30 },
+            { "option": "Caramel", "price": 40 }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Extra Toppings",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Nuts", "price": 20 },
+            { "option": "Raisins", "price": 20 }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Sweetness Level",
+          "options": [
+            { "option": "Regular", "price": 0 },
+            { "option": "Extra Sweet", "price": 30 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kurt",
+      "summary": "A savory, dried dairy snack, perfect for on-the-go.",
+      "longDescription": "Kurt is a traditional snack made from dried sour milk, pressed into small balls. It has a tangy flavor and is often enjoyed as a portable snack for travelers.",
+      "imageName": "kurt",
+      "price": 300
+    }
+  ]
+}
