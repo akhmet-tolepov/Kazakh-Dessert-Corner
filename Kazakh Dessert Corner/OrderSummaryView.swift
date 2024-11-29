@@ -1,15 +1,8 @@
-//
-//  OrderSummaryView.swift
-//  Kazakh Dessert Corner
-//
-//  Created by Akhmet Tolepov on 13.11.2024.
-//
-
 import SwiftUI
 
 struct OrderSummaryView: View {
     @State private var order: Order? = Order.loadFromUserDefaults()
-    
+
     var body: some View {
         NavigationStack {
             if let order = order {
@@ -20,11 +13,17 @@ struct OrderSummaryView: View {
                         Text("City: \(order.city)")
                         Text("Zip: \(order.zip)")
                     }
-                    
+
                     Section(header: Text("Order Summary")) {
-                        Text("Item: \(order.itemName)") // Replace with your order item data
-                        Text("Quantity: \(order.quantity)")
-                        Text("Total Price: \(order.totalPrice)₸") // Assuming `totalPrice` is a computed property
+                        Text("Item: \(order.itemName)")
+                        
+                        if !order.selectedOptions.isEmpty {
+                            ForEach(order.selectedOptions, id: \.self) { option in
+                                Text("Selected option: \(option)")
+                            }
+                        }
+
+                        Text("Total Price: \(order.totalPrice)₸")
                     }
                 }
                 .navigationTitle("Order Summary")
@@ -35,11 +34,12 @@ struct OrderSummaryView: View {
             }
         }
         .onAppear {
-            // Refresh order data whenever the view appears
+            // Reload the order each time this view appears
             self.order = Order.loadFromUserDefaults()
         }
     }
 }
+
 
 #Preview {
     OrderSummaryView()

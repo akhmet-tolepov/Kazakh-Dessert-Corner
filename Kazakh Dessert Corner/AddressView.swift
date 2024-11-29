@@ -1,14 +1,14 @@
 import SwiftUI
 
+
 struct AddressView: View {
     @Binding var order: Order
     @State private var isProcessingOrder = false
     @State private var successMessage: String?
     @State private var errorMessage: String?
 
-    // Custom initializer
     init(order: Binding<Order>) {
-        self._order = order // Initialize the @Binding property
+        self._order = order
     }
 
     var body: some View {
@@ -27,14 +27,13 @@ struct AddressView: View {
                             await placeOrder()
                         }
                     }
-                    .disabled(order.check || isProcessingOrder) // Disabled if check is true
+                    .disabled(order.check || isProcessingOrder)
                     .padding()
                     .background(Color.brown)
                     .foregroundColor(.white)
                     .cornerRadius(10)
                 }
-                .disabled(order.check || isProcessingOrder) // Same as above
-                
+
                 NavigationLink("View Order Summary") {
                     OrderSummaryView()
                 }
@@ -42,7 +41,6 @@ struct AddressView: View {
             .navigationTitle("Delivery details")
             .navigationBarTitleDisplayMode(.inline)
             
-            // Display messages below the form
             if let successMessage = successMessage {
                 Text(successMessage)
                     .foregroundColor(.green)
@@ -58,29 +56,21 @@ struct AddressView: View {
     }
 
     func placeOrder() async {
-        order.saveToUserDefaults()
         isProcessingOrder = true
         errorMessage = nil
 
         do {
-            // Simulating async operation (e.g., API call or processing)
             try await Task.sleep(nanoseconds: 2 * 1_000_000_000)
-            
-            // Save order details to UserDefaults after successful placement
-            order.saveToUserDefaults()
-            
-            // Show success message or navigate to OrderSummaryView if desired
+            order.saveToUserDefaults()  // Save the order to UserDefaults after placement
             successMessage = "Order placed successfully!"
-            print("Order placed successfully and saved!")
-            
         } catch {
             errorMessage = "An error occurred while placing your order. Please try again."
-            print("Error placing order: \(error.localizedDescription)")
         }
-        
+
         isProcessingOrder = false
     }
 }
+
 
 #Preview {
     let sampleCustomizationOptions = [

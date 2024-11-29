@@ -6,17 +6,19 @@
     {
       "name": "Baursak",
       "summary": "A popular fried bread served as a snack or with meals.",
-      "longDescription": "Baursak is a traditional fried dough that is soft, fluffy, and slightly sweet. It is usually enjoyed with honey or jam, and served during celebrations and family gatherings. You can choose between medium or large portions.",
+      "longDescription": "Baursak is a traditional fried dough that is soft, fluffy, and slightly sweet. It is usually enjoyed with honey or jam, and served during celebrations and family gatherings. You can choose between different portion sizes.",
       "imageName": "baursak",
-      "price": 200,
+      "price": 1000,
       "customizationOptions": [
         {
           "id": "1",
           "name": "Size",
           "options": [
-            { "option": "None", "price": 0 },
-            { "option": "Medium", "price": 250 },
-            { "option": "Large", "price": 300 }
+            { "option": "(10)", "price": 1000 },
+            { "option": "(20)", "price": 1700 },
+            { "option": "(30)", "price": 2500 },
+            { "option": "(40)", "price": 3400 },
+            { "option": "(50)", "price": 4300 }
           ]
         },
         {
@@ -24,8 +26,8 @@
           "name": "Sides",
           "options": [
             { "option": "None", "price": 0 },
-            { "option": "Honey", "price": 50 },
-            { "option": "Jam", "price": 70 }
+            { "option": "Honey", "price": 1600 },
+            { "option": "Jam", "price": 2000 }
           ]
         },
         {
@@ -34,7 +36,7 @@
           "options": [
             { "option": "Regular", "price": 0 },
             { "option": "Less Sweet", "price": 0 },
-            { "option": "Extra Sweet", "price": 30 }
+            { "option": "Extra Sweet", "price": 900 }
           ]
         }
       ]
@@ -48,6 +50,17 @@
       "customizationOptions": [
         {
           "id": "1",
+          "name": "Size",
+          "options": [
+            { "option": "(S)", "price": 1500 },
+            { "option": "(M)", "price": 2000 },
+            { "option": "(L)", "price": 2500 },
+            { "option": "(X-L)", "price": 3000 },
+            { "option": "(XX-L)", "price": 3500 }
+          ]
+        },
+        {
+          "id": "2",
           "name": "Meat Type",
           "options": [
             { "option": "Horse", "price": 1500 },
@@ -57,21 +70,21 @@
           ]
         },
         {
-          "id": "2",
+          "id": "3",
           "name": "Extra Toppings",
           "options": [
             { "option": "None", "price": 0 },
-            { "option": "Onions", "price": 20 },
-            { "option": "Herbs", "price": 30 }
+            { "option": "Onions", "price": 300 },
+            { "option": "Herbs", "price": 900 }
           ]
         },
         {
-          "id": "3",
+          "id": "4",
           "name": "Flavor Intensity",
           "options": [
             { "option": "Regular", "price": 0 },
             { "option": "Mild", "price": 0 },
-            { "option": "Spicy", "price": 40 }
+            { "option": "Spicy", "price": 400 }
           ]
         }
       ]
@@ -81,39 +94,73 @@
       "summary": "Flaky pastry filled with meat, onions, and spices.",
       "longDescription": "Samsa is a savory pastry typically filled with minced meat and onions. Baked to perfection, it’s a popular street food enjoyed by people across Kazakhstan.",
       "imageName": "samsa",
-      "price": 500
+      "price": 500,
+      "customizationOptions": [
+        {
+          "id": "1",
+          "name": "With What",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Beef", "price": 0 },
+            { "option": "Lamb", "price": 2800 },
+            { "option": "Chicken", "price": 3200 }
+          ]
+        },
+        {
+          "id": "2",
+          "name": "Size",
+          "options": [
+            { "option": "(10)", "price": 2000 },
+            { "option": "(20)", "price": 4900 },
+            { "option": "(30)", "price": 5700 },
+            { "option": "(40)", "price": 7500 },
+            { "option": "(50)", "price": 9000 }
+          ]
+        }
+      ]
     },
     {
       "name": "Shek-Shek",
       "summary": "A sweet dessert made with fried dough pieces and honey.",
       "longDescription": "Shek-Shek is a delightful sweet treat made from small pieces of fried dough coated in honey. Often decorated with nuts and raisins, it’s a popular dessert served at special occasions.",
       "imageName": "shek",
-      "price": 400,
+      "price": 600,
       "customizationOptions": [
         {
           "id": "1",
-          "name": "Extra Drizzle",
+          "name": "Size",
           "options": [
-            { "option": "None", "price": 0 },
-            { "option": "Honey", "price": 30 },
-            { "option": "Caramel", "price": 40 }
+            { "option": "(0.3kg)", "price": 600 },
+            { "option": "(1kg)", "price": 1300 },
+            { "option": "(2kg)", "price": 2400 },
+            { "option": "(4kg)", "price": 5200 },
+            { "option": "(6kg)", "price": 6990 }
           ]
         },
         {
           "id": "2",
-          "name": "Extra Toppings",
+          "name": "Extra Drizzle",
           "options": [
             { "option": "None", "price": 0 },
-            { "option": "Nuts", "price": 20 },
-            { "option": "Raisins", "price": 20 }
+            { "option": "Honey", "price": 0 },
+            { "option": "Caramel", "price": 1000 }
           ]
         },
         {
           "id": "3",
+          "name": "Extra Toppings",
+          "options": [
+            { "option": "None", "price": 0 },
+            { "option": "Nuts", "price": 500 },
+            { "option": "Raisins", "price": 800 }
+          ]
+        },
+        {
+          "id": "4",
           "name": "Sweetness Level",
           "options": [
             { "option": "Regular", "price": 0 },
-            { "option": "Extra Sweet", "price": 30 }
+            { "option": "Extra Sweet", "price": 0 }
           ]
         }
       ]
@@ -123,7 +170,20 @@
       "summary": "A savory, dried dairy snack, perfect for on-the-go.",
       "longDescription": "Kurt is a traditional snack made from dried sour milk, pressed into small balls. It has a tangy flavor and is often enjoyed as a portable snack for travelers.",
       "imageName": "kurt",
-      "price": 300
+      "price": 600,
+      "customizationOptions": [
+        {
+          "id": "1",
+          "name": "Size",
+          "options": [
+            { "option": "(0.3kg)", "price": 600 },
+            { "option": "(1kg)", "price": 1300 },
+            { "option": "(2kg)", "price": 2400 },
+            { "option": "(4kg)", "price": 5200 },
+            { "option": "(6kg)", "price": 6990 }
+          ]
+        }
+      ]
     }
   ]
 }
